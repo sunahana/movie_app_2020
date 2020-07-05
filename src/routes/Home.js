@@ -16,7 +16,7 @@ getMovies = async () => {
       data: {movies}
     }
   } 
-  = await axios.get('https://yts-proxy.now.sh/list_movies.json');
+  = await axios.get('https://yts-proxy.now.sh/list_movies.json?sort_by=rating');
   this.setState({movies, isLoding:false});
 };
 
